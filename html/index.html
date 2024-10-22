@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/icons8-circuló-w-32.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c5839ce997.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Winona Muñoz</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- LOGO -->
+        <a href="../html/index.html" class="logo">WINONA MUÑOZ</a>
+
+        <input type="checkbox" name="checkbox" id="funcion_burger_button" class="checkbox_burger">
+        <label for="funcion_burger_button" class="burger_button_action">
+            <i class="fa-solid fa-bars burger_button"></i>
+        </label>
+
+
+        <nav>
+            <ul class="header_nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre_mi">Sobre mí</a></li>
+                <li><a href="#mis_proyectos">Mis Proyectos</a></li>
+                <li><a href="#contactame">Contáctame</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+
+        <section class="hero" id="sobre_mi">
+            <div class="hero_texto">
+                <p>Holaa, soy</p>
+                <h1>Winona Muñoz</h1>
+                <h3>Desarrolladora Full-Stack</h3>
+                <h5>Jr. Developer</h5>
+                <p class="experiencia">Me apasiona crear páginas web. Tengo experiencia en el desarrollo frontend y
+                    siempre estoy en busca de nuevos desafíos que me permitan seguir creciendo y contribuyendo al éxito
+                    de proyectos innovadores.</p>
+            </div>
+
+            <div class="div_img_cv">
+
+                <div class="foto_profesional">
+                    <img src="../images/foto-profesional-winona-muñoz.png" alt="Foto de perfil de WINONA MUÑOZ"
+                        class="img">
+                </div>
+
+                <div class="div_cv">
+                    <a href="#" class="button_cv">CV</a>
+                </div>
+            </div>
+
+
+            <aside>
+                <nav class="nav_redes">
+                    <ul class="ul_redes">
+                        <li><a href="https://www.instagram.com/winona_munoz/"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://wa.me/qr/IX5XG4CSMFVYE1 "><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/winona-mu%C3%B1oz-aaab15276/"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/Winona02"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </section>
+
+
+        <section class="section_proyectos">
+            <h2 id="mis_proyectos">Proyectos</h2>
+            <article class="article_proyecto">
+                <h6>E-Commerce Mercado Liebre</h6>
+                <img src="../images/Proyecto-MercadoLiebre-img.png" alt="Proyecto 1">
+                <div class="div_texto">
+                    <p class="texto_visible">En este proyecto, desarrollé una interfaz de usuario para una plataforma de
+                        e-commerce "Mercado Liebre". El diseño incluye vistas adaptadas a dispositivos mobile, tablet y
+                        desktop asegurando una experiencia de usuario óptima.</p>
+                    <input type="checkbox" name="boton" id="ver_mas1" class="checkbox">
+                    <label for="ver_mas1" class="ver_mas_boton"></label>
+                    <p class="ver_mas_texto">La interfaz ofrece funcionalidades como recomendaciones personalizadas
+                        basadas en las últimas visitas del usuario, ofertas de productos con descuentos y diferentes
+                        opciones de pago. La estructura visual es clara y moderna, enfocada en la experiencia del
+                        usuario.</p>
+                </div>
+            </article>
+
+            <article class="article_proyecto contraria">
+                <h6>E-Commerce Kitchening</h6>
+                <img src="../images/Proyecto-Kitchening-img.png" alt="Proyecto 2">
+                <div class="div_texto">
+                    <p class="texto_visible">El proyecto Kitchening fue desarrollado en colaboración con mis compañeros
+                        y profesor de cursada, con el objetivo de crear un sitio web funcional y practicar lo visto en
+                        clase.</p>
+                    <input type="checkbox" name="boton" id="ver_mas2" class="checkbox">
+                    <label for="ver_mas2" class="ver_mas_boton"></label>
+                    <p class="ver_mas_texto"> Nos enfocamos en diseñar una plataforma que fuera atractiva y fácil de
+                        navegar, con énfasis en la presentación visual de los platos y servicios ofrecidos por el
+                        restaurante.</p>
+                </div>
+            </article>
+
+            <article class="article_proyecto">
+                <h6>E-Commerce Home Deco</h6>
+                <img src="../images/Proyecto-HomeDeco-img.png" alt="Proyecto 3">
+                <div class="div_texto">
+                    <p class="texto_visible">Este proyecto consistió en el desarrollo completo de una página web para
+                        Home Deco (ficticia), enfocada en ofrecer una experiencia de usuario intuitiva y visualmente
+                        atractiva.</p>
+                    <input type="checkbox" name="boton" id="ver_mas3" class="checkbox">
+                    <label for="ver_mas3" class="ver_mas_boton"></label>
+                    <p class="ver_mas_texto"> El sitio web presenta un catálogo de productos cuidadosamente organizado,
+                        destacando piezas clave como sofás, sillas, y mesas, con funcionalidades modernas.</p>
+                </div>
+            </article>
+
+        </section>
+
+
+
+        <section class="formulario" id="contactame">
+            <h2>Contáctame</h2>
+            <form action="#">
+                <input type="text" class="input_user" placeholder="Nombre">
+                <input type="email" class="input_user" placeholder="Email">
+                <label for="mensaje"></label>
+                <textarea class="input_user" name="mensaje" id="mensaje" cols="31" rows="5"
+                    placeholder=" Mensaje:"></textarea>
+                <input type="submit" value="Enviar" class="submit">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <section class="footer_redes">
+            <h5>Seguime en:</h5>
+            <a href="https://www.instagram.com/winona_munoz/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/qr/IX5XG4CSMFVYE1 "><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/winona-mu%C3%B1oz-aaab15276/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Winona02"><i class="fa-brands fa-github"></i></a>
+        </section>
+        <small>Copyright © 2024 Winona Muñoz, todos los derechos reservados.</small>
+    </footer>
+</body>
+
+</html>

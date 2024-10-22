@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background: linear-gradient(230.59deg, #0c1c3a 0%, #061124 25%, #466fbc 50%, #08152c 75%);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.hero {
+
+    .hero_texto {
+
+        h1 {
+            font-size: 50px;
+            margin: 10px 0px;
+        }
+
+        h3 {
+            font-size: 23px;
+            margin: 5px 0px;
+        }
+
+        h5 {
+            font-size: 18px;
+            margin: 5px 0px;
+        }
+
+        .experiencia {
+            margin: 10px 0px;
+        }
+    }
+
+    .foto_profesional {
+        margin: 0 auto;
+        border: 1px solid white;
+        border-radius: 50%;
+        background: linear-gradient(230.59deg, #0c1c3a 0%, #061124 25%, #b246bc 50%, #08152c 75%);
+        width: 70%;
+
+        .img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+
+    .div_cv {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .button_cv {
+            padding: 15px;
+            border-radius: 40%;
+            background-color: #2f59a186;
+            margin-top: 30px;
+            transition: all 0.3s linear;
+        }
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+
+.section_proyectos {
+    /* border: 1px solid white; */
+    /*BORRAR*/
+    margin: 35px 0px;
+
+    .article_proyecto {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 2px solid rgb(151, 151, 151);
+        border-radius: 10px;
+        /*BORRAR*/
+        margin: 20px 0px 0px;
+
+        h6 {
+            font-size: 18px;
+            text-align: start;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 90%;
+            margin: 10px 0px;
+        }
+
+        .div_texto {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+
+        /* FUNCIÓN VER MÁS / VER MENOS */
+        .checkbox {
+            display: none;
+        }
+
+        .ver_mas_boton {
+            color: #a9aab1;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .ver_mas_texto {
+            display: none;
+            margin: 10px 0px;
+        }
+
+        .checkbox:checked~.ver_mas_texto {
+            display: block;
+        }
+
+        .checkbox:checked+.ver_mas_boton::before {
+            content: "(Ver menos)";
+            font-size: 15px;
+        }
+
+        .ver_mas_boton::before {
+            content: "(Ver más)";
+            font-size: 15px;
+        }
+    }
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario {
+
+    text-align: center;
+
+    .input_user,
+    .submit {
+        border-color: white;
+        border-style: none;
+        border-radius: 1vw;
+        width: 90%;
+        margin-top: 15px;
+        padding: 10px;
+        margin-bottom: 15px;
+        color: #000000;
+    }
+
+    .submit {
+        background-color: #2f59a186;
+        width: 60%;
+        color: #ffffff;
+        transition: all 0.3s linear;
+    }
+}
+
+
+/* TABLET */
+@media (min-width:768px) {
+
+    .hero {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        min-height: 30vh;
+
+        .hero_texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+
+            p {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            h3 {
+                font-size: 30px;
+                margin: 5px 0px;
+            }
+
+            h5 {
+                font-size: 23px;
+                margin: 5px 0px;
+            }
+
+            .experiencia {
+                margin: 10px 0px;
+            }
+        }
+
+        .div_img_cv {
+            width: 30%;
+
+            .foto_profesional {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+
+        }
+
+
+        aside {
+            height: 100%;
+            width: 5%;
+            min-height: 30vh;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+
+
+            .nav_redes {
+
+                .ul_redes {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    a {
+                        font-size: 25px;
+                        padding: 10px;
+                        transition: all 0.5s ease;
+
+                        .fa-brands {
+                            color: #ffffff;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .section_proyectos {
+
+        padding: 10px 20px;
+
+        .article_proyecto {
+            display: flex;
+            justify-content: space-around;
+            align-content: flex-start;
+
+            h6 {
+                width: 100%;
+                text-align: center;
+            }
+
+            img {
+                width: 40%;
+                margin-bottom: 20px;
+            }
+
+            .div_texto {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .texto_visible {
+                    width: 100%;
+                }
+
+                .ver_mas_boton {
+                    width: 100%;
+                }
+
+                .ver_mas_texto {
+                    width: 100%;
+                }
+            }
+        }
+
+        .contraria {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+
+
+/* DESKTOP */
+
+
+@media (min-width:1024px) {
+
+    .hero {
+        padding: 20px;
+
+        .hero_texto {
+            width: 60%;
+
+            p {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            h3 {
+                font-size: 30px;
+                margin: 5px 0px;
+            }
+
+            h5 {
+                font-size: 23px;
+                margin: 5px 0px;
+            }
+
+            .experiencia {
+                margin: 10px 0px;
+            }
+        }
+
+        .div_img_cv {
+            width: 40%;
+        }
+
+        .foto_profesional {
+            display: flex;
+            align-items: center;
+            width: 30%;
+            height: 100%;
+            transition: all 1s linear;
+        }
+
+        /* MOVIMIENTOS */
+
+        .foto_profesional:hover {
+            width: 108%;
+            cursor: pointer;
+            transition: all 1s linear;
+            box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        }
+
+        .button_cv:hover {
+            background-color: #1c79d696;
+            transition: all 0.3s linear;
+
+        }
+
+        aside {
+            min-height: 40vh;
+
+            .nav_redes {
+
+                .ul_redes {
+
+                    a .fa-brands {
+                        color: #c4bebe;
+                    }
+
+                    a:hover {
+
+                        transition: all 0.5s linear;
+                        font-size: 35px;
+
+                        .fa-brands {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .section_proyectos {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* align-items: flex-start; */
+        padding: 0px;
+
+        h2 {
+            width: 100%;
+        }
+
+        .article_proyecto {
+            display: flex;
+            width: 31%;
+
+            h6 {
+                font-size: 17px;
+            }
+
+            img {
+                width: 90%;
+
+
+            }
+
+            .div_texto {
+                width: 90%;
+            }
+        }
+    }
+
+    /* MOVIMIENTOS */
+
+
+    .article_proyecto:hover {
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    .formulario {
+
+        .submit:hover {
+            transition: all 0.3s linear;
+            background-color: #1c79d696;
+            cursor: pointer;
+        }
+    }
+}

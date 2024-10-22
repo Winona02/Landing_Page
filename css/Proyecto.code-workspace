@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Documentos/Proyecto"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../JavaScript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PortfolioWinonaMuñoz"
+	}
+}

@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgb(173, 167, 167);
+    background: linear-gradient(245.59deg, #142646 0%, #466fbc 25%, #0f1f3b 75%);
+}
+
+.logo {
+    font-family: "inconsolata", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+nav {
+    .header_nav {
+        display: flex;
+
+        a {
+            margin-left: 60px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            border-bottom: 5px solid transparent;
+            transition: all .05s ease;
+        }
+
+    }
+}
+
+
+/* BOTÓN DE HAMBURGUESA */
+
+.burger_button {
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#funcion_burger_button {
+    /*NUNCA TIENE QUE VERSE*/
+    display: none;
+}
+
+.burger_button_action {
+    display: block;
+
+}
+
+.div_hero {
+    width: 100%;
+}
+
+/* FUNCIÓN BOTÓN DE HAMBURGUESA*/
+@media (max-width:767px) {
+
+    .burger_button_action {
+        display: flex;
+        margin-left: auto;
+    }
+
+
+
+    /* .checkbox_burger:checked + nav .header_nav::before {
+        height: 180px; 
+        } */
+
+    nav .header_nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        width: 170px;
+        height: 180px;
+        background-color: #0f1f3bf8;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease-out;
+        justify-content: space-around;
+
+        a {
+            margin-left: 10px;
+            display: block;
+            font-size: 16px;
+        }
+    }
+
+    .header_nav {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s linear;
+    }
+
+
+    .checkbox_burger:checked~nav .header_nav {
+        height: 0px;
+    }
+}
+
+
+@media (min-width:768px) {
+
+    .burger_button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+
+        .header_nav {
+
+            a {
+                margin-left: 15px;
+
+            }
+        }
+    }
+}
+
+
+@media (min-width:1024px) {
+
+    nav {
+
+        .header_nav {
+
+            a {
+                color: #c4bebe;
+                margin-left: 80px;
+
+            }
+        }
+    }
+
+    .header_nav a:hover {
+        transition: all 0.5s linear;
+        color: rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+}
